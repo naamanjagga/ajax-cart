@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+	<link rel="stylesheet" href="style.css" >
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
@@ -34,7 +35,6 @@ echo '<div id="products">';
 	<img src="images/'.$v['image'].'">
 	<h3 class="title"><a href="#">Product '.$v['id'].'</a></h3>
 	<span>Price: $'.$v['price'].'</span>
-	<input type="submit" value="add to cart" name="submit'.$i.'"> 
 	<a class="add-to-cart" data-id=" '. $v['id'] .' " data-name="' . $v['name'] .' " data-image="' . $v['image'] . '" data-price="' . $v['price'] . '" >Add To Cart</a>
 	</div>';
     $i++;
@@ -50,9 +50,6 @@ echo '<div id="products">';
 
 	</div>
 
-	<div id="lastDiv">
-		<button id="clearCart" >clear cart</button>
-	</div>
 </body>
 </html>
 
